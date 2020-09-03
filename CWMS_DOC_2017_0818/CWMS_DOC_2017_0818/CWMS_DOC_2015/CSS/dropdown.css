@@ -1,0 +1,62 @@
+* 
+{
+	padding:0; margin:0
+}
+
+.dropdown, .dropdown2
+{
+	float:left; 
+}
+
+.dropdown dt, .dropdown2 dt
+{
+	height:23px; background: solid #9ac1c9;  font-weight:bold; cursor:pointer;
+	width:113px;
+}
+
+.dropdown dt
+{
+	background:url('../images/scrollbar.jpg');
+}
+
+.dropdown2 dt
+{
+	background:url('../images/scrollbar2.jpg');
+}	
+
+.dropdown dd, .dropdown2 dd 
+{
+	position:absolute; overflow:hidden; display:none; z-index:200;
+	background-color:#fafafa;
+	text-align:left;
+}
+
+.dropdown dd
+{
+	width:200px;
+}
+
+.dropdown2 dd
+{
+	width:375px;
+}
+
+.dropdown ul, .dropdown2 ul
+{
+	background: solid #9ac1c9; list-style:none; border-top:none;
+}
+
+.dropdown li, .dropdown2 li
+{
+	display:inline;
+}
+
+.dropdown a, .dropdown a:active, .dropdown a:visited, .dropdown2 a, .dropdown a:active, .dropdown a:visited 
+{
+	display:block; padding:5px; color:#000; text-decoration:none; background:#f5faff; 
+}
+
+.dropdown .underline, .dropdown2 .underline
+{
+	border-bottom:4px solid #9F0706; text-align:left;
+}

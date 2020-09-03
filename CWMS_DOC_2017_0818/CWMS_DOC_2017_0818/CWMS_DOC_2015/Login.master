@@ -1,0 +1,41 @@
+﻿<%@ Master Language="VB" MasterPageFile="~/MasterPage.master" AutoEventWireup="false" Inherits="CWMS_DOC_2015.Login" Codebehind="Login.master.vb" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+    <style type="text/css">
+        .style1
+        {
+            width: 100%;
+        }
+        .style2
+        {
+            width: 295px;
+        }
+    </style>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+    <table class="style1">
+        <tr>
+            <td class="style2">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server">
+                    <p>
+                        &nbsp;</p>
+                </asp:ContentPlaceHolder>
+            </td>
+            <td>
+                <br />
+                <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 歡迎 登入 !<br />
+                <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 請輸入您的帳號及密碼 。<br />
+                <br />
+                <br />
+                <br />                
+                <br />
+                <br />
+                <br />
+            </td>
+        </tr>
+    </table>
+    
+</asp:Content>
+

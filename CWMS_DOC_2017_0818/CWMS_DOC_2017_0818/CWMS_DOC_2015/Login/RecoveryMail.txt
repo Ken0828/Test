@@ -1,0 +1,3 @@
+﻿Dear <b><%UserName%></b>：<br><br>
+　　您的密碼為：<b><%Password%></b><br><br>
+　

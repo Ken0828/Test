@@ -1,0 +1,1100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{1D183DE2-CE63-4D0D-BB1D-0BC9BEBE68D0}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>CWMS_DOC_2015</RootNamespace>
+    <AssemblyName>CWMS_DOC_2015</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <MyType>Custom</MyType>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <Use64BitIISExpress />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>CWMS_DOC_2015.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <PublishDatabases>false</PublishDatabases>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>CWMS_DOC_2015.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AspNet.ScriptManager.jQuery, Version=2.1.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\AspNet.ScriptManager.jQuery.2.1.4\lib\net45\AspNet.ScriptManager.jQuery.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Charts.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.DataAccess.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.DataAccess.v20.1.UI, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Docs.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Office.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Pdf.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.PivotGrid.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.SpellChecker.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.Desktop.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Web.ASPxHtmlEditor.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Web.ASPxPivotGrid.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Web.ASPxSpellChecker.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Web.ASPxThemes.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Web.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Xpo.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGauges.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.CodeParser.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v20.1.Export, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v20.1.Extensions, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Web.Resources.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v20.1.Web.WebForms, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v20.1.Web, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.86.0.518, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpZipLib.0.86.0\lib\20\ICSharpCode.SharpZipLib.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.5.10.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NPOI, Version=2.2.1.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\NPOI.2.2.1\lib\net40\NPOI.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NPOI.OOXML, Version=2.2.1.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\NPOI.2.2.1\lib\net40\NPOI.OOXML.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NPOI.OpenXml4Net, Version=2.2.1.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\NPOI.2.2.1\lib\net40\NPOI.OpenXml4Net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NPOI.OpenXmlFormats, Version=2.2.1.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\NPOI.2.2.1\lib\net40\NPOI.OpenXmlFormats.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.DataVisualization" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Images\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Code\DB.vb" />
+    <Content Include="App_Data\UploadTemp\新文字文件.txt" />
+    <Content Include="AuditHelper.aspx" />
+    <Content Include="bin\App_Licenses.dll" />
+    <Content Include="bin\AspNet.ScriptManager.jQuery.dll" />
+    <Content Include="bin\CWMS_DOC_2015.dll" />
+    <Content Include="bin\CWMS_DOC_2015.pdb" />
+    <Content Include="bin\CWMS_DOC_2015.xml" />
+    <Content Include="bin\EncryptDecryptString.dll" />
+    <Content Include="bin\ICSharpCode.SharpZipLib.dll" />
+    <Content Include="bin\itextsharp.dll" />
+    <Content Include="bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll" />
+    <Content Include="bin\NPOI.dll" />
+    <Content Include="bin\NPOI.OOXML.dll" />
+    <Content Include="bin\NPOI.OpenXml4Net.dll" />
+    <Content Include="bin\NPOI.OpenXmlFormats.dll" />
+    <Content Include="Button_source\CEMS_KPI_BANNER.png" />
+    <Content Include="Button_source\CEMS_KPI_BUTTON.png" />
+    <Content Include="Button_source\CEMS_KPI_BUTTON2.png" />
+    <Content Include="Button_source\CEMS_KPI_BUTTON3.png" />
+    <Content Include="Button_source\CEMS_KPI_Link.png" />
+    <Content Include="CaseTransfer.aspx" />
+    <Content Include="Controls\Footer.ascx" />
+    <Content Include="Controls\Header.ascx" />
+    <Content Include="CopyTestData.aspx" />
+    <Content Include="CSS\dropdown.css" />
+    <Content Include="CSS\EPACEMS.css" />
+    <Content Include="CSS\txt.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="DocManage\M_AUDITRESULT.aspx" />
+    <Content Include="DocManage\M_EXAMLIST.aspx" />
+    <Content Include="DocManage\M_MODIFY.aspx" />
+    <Content Include="DocManage\M_Modify_PDF.aspx" />
+    <Content Include="DocManage\M_SET_CHECKLIST.aspx" />
+    <Content Include="DocManage\M_SET_DAHS.aspx" />
+    <Content Include="DocManage\M_SET_FACTORY.aspx" />
+    <Content Include="DocManage\M_SET_ITEM.aspx" />
+    <Content Include="DocManage\M_SET_LED.aspx" />
+    <Content Include="DocManage\M_SET_LINK.aspx" />
+    <Content Include="DocManage\M_SET_LP.aspx" />
+    <Content Include="DocManage\M_SET_PDF.aspx" />
+    <Content Include="DocManage\M_SET_SPEC.aspx" />
+    <Content Include="DocManage\M_VRY_CHECKLIST.aspx" />
+    <Content Include="DocManage\M_VRY_DAHS.aspx" />
+    <Content Include="DocManage\M_VRY_FACTORY.aspx" />
+    <Content Include="DocManage\M_VRY_ITEM.aspx" />
+    <Content Include="DocManage\M_VRY_LED.aspx" />
+    <Content Include="DocManage\M_VRY_LINK.aspx" />
+    <Content Include="DocManage\M_VRY_LP.aspx" />
+    <Content Include="DocManage\M_VRY_PDF.aspx" />
+    <Content Include="DocManage\M_VRY_SPEC.aspx" />
+    <Content Include="DocManage\SetReport.aspx" />
+    <Content Include="DocManage\WebUrlLink.aspx" />
+    <Content Include="Download\download.aspx" />
+    <Content Include="EPADAHS\EPADAHS.aspx" />
+    <Content Include="EpbNotifyMessage.aspx" />
+    <Content Include="ExamProgress.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Images\1319797331_save_add.ico" />
+    <Content Include="Images\banner_1024x100.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\banner_1612x100.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\bg 2.jpg" />
+    <Content Include="Images\bg-blue.jpg" />
+    <Content Include="Images\bg.jpg" />
+    <Content Include="Images\bgtile.jpg" />
+    <Content Include="Images\blue pixel.jpg" />
+    <Content Include="Images\blueb.png" />
+    <Content Include="Images\button_cancel_3232.png" />
+    <Content Include="Images\button_cancel_6464.png" />
+    <Content Include="Images\button_save_add_3232.png" />
+    <Content Include="Images\buythistemplate.jpg" />
+    <Content Include="Images\category.jpg" />
+    <Content Include="Images\Excel-24.ico" />
+    <Content Include="Images\learnmoreaboutthisproduct.jpg" />
+    <Content Include="Images\LEAVE.GIF" />
+    <Content Include="Images\mAqua.jpg" />
+    <Content Include="Images\menu\Area_16x16.png" />
+    <Content Include="Images\menu\Backward_32x32.png" />
+    <Content Include="Images\menu\Bar_16x16.png" />
+    <Content Include="Images\menu\Bubble_16x16.png" />
+    <Content Include="Images\menu\ChartsRotate_16x16.png" />
+    <Content Include="Images\menu\ChartsShowLegend_16x16.png" />
+    <Content Include="Images\menu\ChartYAxisSettings_16x16.png" />
+    <Content Include="Images\menu\Chart_16x16.png" />
+    <Content Include="Images\menu\DrillDownOnArguments_Chart_16x16.png" />
+    <Content Include="Images\menu\DrillDownOnArguments_Pie_16x16.png" />
+    <Content Include="Images\menu\DrillDownOnSeries_Chart_16x16.png" />
+    <Content Include="Images\menu\DrillDownOnSeries_Pie_16x16.png" />
+    <Content Include="Images\menu\DrillDown_16x16.png" />
+    <Content Include="Images\menu\Forward_32x32.png" />
+    <Content Include="Images\menu\FullStackedArea_16x16.png" />
+    <Content Include="Images\menu\FullStackedBar_16x16.png" />
+    <Content Include="Images\menu\FullStackedLine_16x16.png" />
+    <Content Include="Images\menu\FullStackedSplineArea_16x16.png" />
+    <Content Include="Images\menu\HighLowClose_16x16.png" />
+    <Content Include="Images\menu\KPI_16x16.png" />
+    <Content Include="Images\menu\Line_16x16.png" />
+    <Content Include="Images\menu\OpenHighLowCloseCandleStick_16x16.png" />
+    <Content Include="Images\menu\OpenHighLowCloseStock_16x16.png" />
+    <Content Include="Images\menu\PieLabelsDataLabels_16x16.png" />
+    <Content Include="Images\menu\PieLabelsTooltips_16x16.png" />
+    <Content Include="Images\menu\PieStyleDonut_16x16.png" />
+    <Content Include="Images\menu\PieStylePie_16x16.png" />
+    <Content Include="Images\menu\Pie_16x16.png" />
+    <Content Include="Images\menu\Point_16x16.png" />
+    <Content Include="Images\menu\PreviewChart_16x16.png" />
+    <Content Include="Images\menu\RangeArea_16x16.png" />
+    <Content Include="Images\menu\RangeBar_16x16.png" />
+    <Content Include="Images\menu\SideBySideRangeBar_16x16.png" />
+    <Content Include="Images\menu\SplineArea_16x16.png" />
+    <Content Include="Images\menu\Spline_16x16.png" />
+    <Content Include="Images\menu\StackedArea_16x16.png" />
+    <Content Include="Images\menu\StackedBar_16x16.png" />
+    <Content Include="Images\menu\StackedLine_16x16.png" />
+    <Content Include="Images\menu\StackedSplineArea_16x16.png" />
+    <Content Include="Images\menu\StepArea_16x16.png" />
+    <Content Include="Images\menu\Stepline_16x16.png" />
+    <Content Include="Images\News-1.png" />
+    <Content Include="Images\News-2.png" />
+    <Content Include="Images\News-3.png" />
+    <Content Include="Images\onlinehelpcenter.jpg" />
+    <Content Include="Images\Print_32x32.png" />
+    <Content Include="Images\remove.jpg" />
+    <Content Include="Images\template-images_01.jpg" />
+    <Content Include="Images\template-images_03.jpg" />
+    <Content Include="Images\template-images_04.jpg" />
+    <Content Include="Images\template-images_06.jpg" />
+    <Content Include="Images\template-images_07.jpg" />
+    <Content Include="Images\template-images_09.jpg" />
+    <Content Include="Images\template-images_10.jpg" />
+    <Content Include="Images\template-images_11.jpg" />
+    <Content Include="Images\template-images_12.jpg" />
+    <Content Include="Images\template-images_14.jpg" />
+    <Content Include="Images\template-images_16.jpg" />
+    <Content Include="Images\template-images_18.jpg" />
+    <Content Include="Images\template-images_19.jpg" />
+    <Content Include="Images\template-images_23.jpg" />
+    <Content Include="Images\template-images_24.jpg" />
+    <Content Include="Images\template-images_25.jpg" />
+    <Content Include="Images\template-images_28.jpg" />
+    <Content Include="Images\tile.gif" />
+    <Content Include="Images\Upload.png" />
+    <Content Include="Images\URL_BUTTON\RWD_措施說明書及確認報告書系統.png" />
+    <Content Include="Images\URL_BUTTON\RWD_環保局主機資訊_EPA.png" />
+    <Content Include="Images\URL_BUTTON\RWD_重大點源.png" />
+    <Content Include="Images\URL_BUTTON\RWD_重大點源_EPB端.png" />
+    <Content Include="Images\URL_BUTTON\措施說明書系統.png" />
+    <Content Include="index.aspx" />
+    <Content Include="LawSCRIPT\LawScript.aspx" />
+    <Content Include="Login\ChangePass.aspx" />
+    <Content Include="Login\ChangePasswordAPI.aspx" />
+    <Content Include="Login\ChangePasswordSingle.aspx" />
+    <Content Include="Login\ChangePWD.aspx" />
+    <Content Include="Login\ChangeQAAPI.aspx" />
+    <Content Include="Login\DeleteUser.aspx" />
+    <Content Include="Login\DeleteUser_O.aspx" />
+    <Content Include="Login\Login.aspx" />
+    <Content Include="Login\PassReset\RecoveryMail.txt" />
+    <Content Include="Login\PasswordRecovery.aspx" />
+    <Content Include="Login\RecoveryMail.txt" />
+    <Content Include="Login\RegUserN.aspx" />
+    <Content Include="Login\UnlockUser.aspx" />
+    <Content Include="Login\UpdateUser.aspx" />
+    <Content Include="Login\UserApproved.aspx" />
+    <Content Include="Login\UsersOnline.aspx" />
+    <Content Include="MainList.aspx" />
+    <Content Include="mycustompage.html" />
+    <Content Include="PDFUPLOAD\SetModify\TextFile1.txt" />
+    <Content Include="PDFUPLOAD\SET\TextFile1.txt" />
+    <Content Include="PDFUPLOAD\VerifyModify\TextFile1.txt" />
+    <Content Include="PDFUPLOAD\VERIFY\TextFile1.txt" />
+    <Content Include="PrepareAudit.aspx" />
+    <Content Include="PrepareModify.aspx" />
+    <Content Include="PrepareSummit.aspx" />
+    <Content Include="PrintingMenu.aspx" />
+    <Content Include="QA\QA.aspx" />
+    <Content Include="DocSetTemplate.xls" />
+    <Content Include="DocVryTemplate.xls" />
+    <Content Include="help_vry-1050908.mht" />
+    <Content Include="help_Set-1050908.mht" />
+    <Content Include="Login\LoginAdmin.master" />
+    <None Include="My Project\PublishProfiles\CWMS_DOC.pubxml" />
+    <Content Include="QueryCasePhase1.aspx" />
+    <Content Include="QueryCasePhase2.aspx" />
+    <Content Include="QueryCasePhase3.aspx" />
+    <Content Include="QueryDAHS\QryDAHSMakerInfo.aspx" />
+    <Content Include="QueryDAHS\QryExamCalc.aspx" />
+    <Content Include="QueryDAHS\QryIPInfo.aspx" />
+    <Content Include="QueryDAHS\QryVideoINfo.aspx" />
+    <Content Include="QueryDAHS\Qry_MailLogHistory.aspx" />
+    <Content Include="ReportTemplate\DocSetTemplate.xlsx" />
+    <Content Include="ReportTemplate\DocVryTemplate.xlsx" />
+    <Content Include="ReportTemplate\措施說明書申請確認書.pdf" />
+    <Content Include="ReportTemplate\措施說明書變更申請表空白表單.pdf" />
+    <Content Include="ReportTemplate\確認報告書申請確認書.pdf" />
+    <Content Include="ReportTemplate\確認報告書變更申請表空白表單.pdf" />
+    <Content Include="Report_set_TEST.xls" />
+    <Content Include="Report_set_TEST.pdf" />
+    <None Include="Scripts\jquery-2.1.4.intellisense.js" />
+    <Content Include="QueryDAHS\QryDAHSInfo.aspx" />
+    <Content Include="QueryDAHS\QryDAHSMaker.aspx" />
+    <Content Include="QueryDAHS\QryElecMeter.aspx" />
+    <Content Include="QueryDAHS\QryExamDays.aspx" />
+    <Content Include="QueryDAHS\QryHistoryExam.aspx" />
+    <Content Include="QueryDAHS\QryLEDLinkSch.aspx" />
+    <Content Include="QueryDAHS\Qry_ExamResult.aspx" />
+    <Content Include="Scripts\jquery-2.1.4.js" />
+    <Content Include="Scripts\jquery-2.1.4.min.js" />
+    <Content Include="SetAudit.aspx" />
+    <Content Include="SetAuditAll.aspx" />
+    <Content Include="SetAuditEdit.aspx" />
+    <Content Include="SetDoc.aspx" />
+    <Content Include="tmp\Explanation.aspx" />
+    <Content Include="tmp\TextFile1.txt" />
+    <Content Include="VryDoc.aspx" />
+    <Content Include="VryPrintingMenu.aspx" />
+    <Content Include="VryToSet.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="措施說明書申請確認書.pdf" />
+    <Content Include="措施說明書變更申請表空白表單.pdf" />
+    <Content Include="確認報告書申請確認書.pdf" />
+    <Content Include="確認報告書變更申請表空白表單.pdf" />
+    <Content Include="措施說明書變更申請表空白表單.doc" />
+    <Content Include="確認報告書變更申請表空白表單.doc" />
+    <Content Include="地方主管機關端.pdf" />
+    <Content Include="業者及污水下水道系統端.pdf" />
+    <Content Include="確認報告書變更申請表%28第一階段範例%29.doc" />
+    <Content Include="確認報告書變更申請表%28第二階段範例%29.doc" />
+    <Content Include="措施說明書申請確認書%28範例%29.doc" />
+    <Content Include="措施說明書變更申請表%28第一階段範例%29.doc" />
+    <Content Include="措施說明書變更申請表%28第二階段範例%29.doc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DocManage\M_Modify_PDF.aspx.designer.vb">
+      <DependentUpon>M_Modify_PDF.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DocManage\M_Modify_PDF.aspx.vb">
+      <DependentUpon>M_Modify_PDF.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="DocManage\WebUrlLink.aspx.designer.vb">
+      <DependentUpon>WebUrlLink.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DocManage\WebUrlLink.aspx.vb">
+      <DependentUpon>WebUrlLink.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="ExamProgress.aspx.designer.vb">
+      <DependentUpon>ExamProgress.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExamProgress.aspx.vb">
+      <DependentUpon>ExamProgress.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Login\PasswordRecovery.aspx.designer.vb">
+      <DependentUpon>PasswordRecovery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login\PasswordRecovery.aspx.vb">
+      <DependentUpon>PasswordRecovery.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="tmp\Explanation.aspx.designer.vb">
+      <DependentUpon>Explanation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="tmp\Explanation.aspx.vb">
+      <DependentUpon>Explanation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VryToSet.aspx.designer.vb">
+      <DependentUpon>VryToSet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VryToSet.aspx.vb">
+      <DependentUpon>VryToSet.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Content Include="App_Code\CwmsDoc.vb" />
+    <Compile Include="DocManage\M_AUDITRESULT.aspx.designer.vb">
+      <DependentUpon>M_AUDITRESULT.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DocManage\M_AUDITRESULT.aspx.vb">
+      <DependentUpon>M_AUDITRESULT.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="DocManage\M_EXAMLIST.aspx.designer.vb">
+      <DependentUpon>M_EXAMLIST.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DocManage\M_EXAMLIST.aspx.vb">
+      <DependentUpon>M_EXAMLIST.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="DocManage\M_MODIFY.aspx.designer.vb">
+      <DependentUpon>M_MODIFY.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DocManage\M_MODIFY.aspx.vb">
+      <DependentUpon>M_MODIFY.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="DocManage\M_SET_CHECKLIST.aspx.designer.vb">
+      <DependentUpon>M_SET_CHECKLIST.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DocManage\M_SET_CHECKLIST.aspx.vb">
+      <DependentUpon>M_SET_CHECKLIST.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="DocManage\M_SET_DAHS.aspx.designer.vb">
+      <DependentUpon>M_SET_DAHS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DocManage\M_SET_DAHS.aspx.vb">
+      <DependentUpon>M_SET_DAHS.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="DocManage\M_SET_FACTORY.aspx.designer.vb">
+      <DependentUpon>M_SET_FACTORY.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DocManage\M_SET_FACTORY.aspx.vb">
+      <DependentUpon>M_SET_FACTORY.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="DocManage\M_SET_ITEM.aspx.designer.vb">
+      <DependentUpon>M_SET_ITEM.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DocManage\M_SET_ITEM.aspx.vb">
+      <DependentUpon>M_SET_ITEM.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="DocManage\M_SET_LED.aspx.designer.vb">
+      <DependentUpon>M_SET_LED.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DocManage\M_SET_LED.aspx.vb">
+      <DependentUpon>M_SET_LED.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="DocManage\M_SET_LINK.aspx.designer.vb">
+      <DependentUpon>M_SET_LINK.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DocManage\M_SET_LINK.aspx.vb">
+      <DependentUpon>M_SET_LINK.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="DocManage\M_SET_LP.aspx.designer.vb">
+      <DependentUpon>M_SET_LP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DocManage\M_SET_LP.aspx.vb">
+      <DependentUpon>M_SET_LP.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="DocManage\M_SET_PDF.aspx.designer.vb">
+      <DependentUpon>M_SET_PDF.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DocManage\M_SET_PDF.aspx.vb">
+      <DependentUpon>M_SET_PDF.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="DocManage\M_SET_SPEC.aspx.designer.vb">
+      <DependentUpon>M_SET_SPEC.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DocManage\M_SET_SPEC.aspx.vb">
+      <DependentUpon>M_SET_SPEC.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="DocManage\M_VRY_CHECKLIST.aspx.designer.vb">
+      <DependentUpon>M_VRY_CHECKLIST.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DocManage\M_VRY_CHECKLIST.aspx.vb">
+      <DependentUpon>M_VRY_CHECKLIST.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="DocManage\M_VRY_DAHS.aspx.designer.vb">
+      <DependentUpon>M_VRY_DAHS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DocManage\M_VRY_DAHS.aspx.vb">
+      <DependentUpon>M_VRY_DAHS.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="DocManage\M_VRY_FACTORY.aspx.designer.vb">
+      <DependentUpon>M_VRY_FACTORY.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DocManage\M_VRY_FACTORY.aspx.vb">
+      <DependentUpon>M_VRY_FACTORY.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="DocManage\M_VRY_ITEM.aspx.designer.vb">
+      <DependentUpon>M_VRY_ITEM.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DocManage\M_VRY_ITEM.aspx.vb">
+      <DependentUpon>M_VRY_ITEM.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="DocManage\M_VRY_LED.aspx.designer.vb">
+      <DependentUpon>M_VRY_LED.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DocManage\M_VRY_LED.aspx.vb">
+      <DependentUpon>M_VRY_LED.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="DocManage\M_VRY_LINK.aspx.designer.vb">
+      <DependentUpon>M_VRY_LINK.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DocManage\M_VRY_LINK.aspx.vb">
+      <DependentUpon>M_VRY_LINK.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="DocManage\M_VRY_LP.aspx.designer.vb">
+      <DependentUpon>M_VRY_LP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DocManage\M_VRY_LP.aspx.vb">
+      <DependentUpon>M_VRY_LP.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="DocManage\M_VRY_PDF.aspx.designer.vb">
+      <DependentUpon>M_VRY_PDF.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DocManage\M_VRY_PDF.aspx.vb">
+      <DependentUpon>M_VRY_PDF.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="DocManage\M_VRY_SPEC.aspx.designer.vb">
+      <DependentUpon>M_VRY_SPEC.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DocManage\M_VRY_SPEC.aspx.vb">
+      <DependentUpon>M_VRY_SPEC.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="QueryCasePhase1.aspx.designer.vb">
+      <DependentUpon>QueryCasePhase1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="QueryCasePhase1.aspx.vb">
+      <DependentUpon>QueryCasePhase1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QueryCasePhase2.aspx.designer.vb">
+      <DependentUpon>QueryCasePhase2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="QueryCasePhase2.aspx.vb">
+      <DependentUpon>QueryCasePhase2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QueryCasePhase3.aspx.designer.vb">
+      <DependentUpon>QueryCasePhase3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="QueryCasePhase3.aspx.vb">
+      <DependentUpon>QueryCasePhase3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SetAuditAll.aspx.designer.vb">
+      <DependentUpon>SetAuditAll.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SetAuditAll.aspx.vb">
+      <DependentUpon>SetAuditAll.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="SetAuditEdit.aspx.designer.vb">
+      <DependentUpon>SetAuditEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SetAuditEdit.aspx.vb">
+      <DependentUpon>SetAuditEdit.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="VryPrintingMenu.aspx.designer.vb">
+      <DependentUpon>VryPrintingMenu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VryPrintingMenu.aspx.vb">
+      <DependentUpon>VryPrintingMenu.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="AuditHelper.aspx.designer.vb">
+      <DependentUpon>AuditHelper.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AuditHelper.aspx.vb">
+      <DependentUpon>AuditHelper.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="CaseTransfer.aspx.designer.vb">
+      <DependentUpon>CaseTransfer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CaseTransfer.aspx.vb">
+      <DependentUpon>CaseTransfer.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="CopyTestData.aspx.designer.vb">
+      <DependentUpon>CopyTestData.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CopyTestData.aspx.vb">
+      <DependentUpon>CopyTestData.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="EpbNotifyMessage.aspx.designer.vb">
+      <DependentUpon>EpbNotifyMessage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EpbNotifyMessage.aspx.vb">
+      <DependentUpon>EpbNotifyMessage.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Login\ChangePass.aspx.designer.vb">
+      <DependentUpon>ChangePass.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login\ChangePass.aspx.vb">
+      <DependentUpon>ChangePass.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login\ChangePasswordAPI.aspx.designer.vb">
+      <DependentUpon>ChangePasswordAPI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login\ChangePasswordAPI.aspx.vb">
+      <DependentUpon>ChangePasswordAPI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login\ChangePasswordSingle.aspx.designer.vb">
+      <DependentUpon>ChangePasswordSingle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login\ChangePasswordSingle.aspx.vb">
+      <DependentUpon>ChangePasswordSingle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login\ChangeQAAPI.aspx.designer.vb">
+      <DependentUpon>ChangeQAAPI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login\ChangeQAAPI.aspx.vb">
+      <DependentUpon>ChangeQAAPI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login\DeleteUser.aspx.designer.vb">
+      <DependentUpon>DeleteUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login\DeleteUser.aspx.vb">
+      <DependentUpon>DeleteUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login\DeleteUser_O.aspx.designer.vb">
+      <DependentUpon>DeleteUser_O.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login\DeleteUser_O.aspx.vb">
+      <DependentUpon>DeleteUser_O.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login\LoginAdmin.master.designer.vb">
+      <DependentUpon>LoginAdmin.master</DependentUpon>
+    </Compile>
+    <Compile Include="Login\LoginAdmin.master.vb">
+      <DependentUpon>LoginAdmin.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login\RegUserN.aspx.designer.vb">
+      <DependentUpon>RegUserN.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login\RegUserN.aspx.vb">
+      <DependentUpon>RegUserN.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login\UnlockUser.aspx.designer.vb">
+      <DependentUpon>UnlockUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login\UnlockUser.aspx.vb">
+      <DependentUpon>UnlockUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login\UpdateUser.aspx.designer.vb">
+      <DependentUpon>UpdateUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login\UpdateUser.aspx.vb">
+      <DependentUpon>UpdateUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login\UserApproved.aspx.designer.vb">
+      <DependentUpon>UserApproved.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login\UserApproved.aspx.vb">
+      <DependentUpon>UserApproved.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login\UsersOnline.aspx.designer.vb">
+      <DependentUpon>UsersOnline.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login\UsersOnline.aspx.vb">
+      <DependentUpon>UsersOnline.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MainList.aspx.designer.vb">
+      <DependentUpon>MainList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MainList.aspx.vb">
+      <DependentUpon>MainList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PrepareAudit.aspx.designer.vb">
+      <DependentUpon>PrepareAudit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PrepareAudit.aspx.vb">
+      <DependentUpon>PrepareAudit.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="PrepareModify.aspx.designer.vb">
+      <DependentUpon>PrepareModify.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PrepareModify.aspx.vb">
+      <DependentUpon>PrepareModify.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="PrepareSummit.aspx.designer.vb">
+      <DependentUpon>PrepareSummit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PrepareSummit.aspx.vb">
+      <DependentUpon>PrepareSummit.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="PrintingMenu.aspx.designer.vb">
+      <DependentUpon>PrintingMenu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PrintingMenu.aspx.vb">
+      <DependentUpon>PrintingMenu.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="QueryDAHS\QryDAHSInfo.aspx.designer.vb">
+      <DependentUpon>QryDAHSInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="QueryDAHS\QryDAHSInfo.aspx.vb">
+      <DependentUpon>QryDAHSInfo.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="QueryDAHS\QryDAHSMaker.aspx.designer.vb">
+      <DependentUpon>QryDAHSMaker.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="QueryDAHS\QryDAHSMaker.aspx.vb">
+      <DependentUpon>QryDAHSMaker.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="QueryDAHS\QryDAHSMakerInfo.aspx.designer.vb">
+      <DependentUpon>QryDAHSMakerInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="QueryDAHS\QryDAHSMakerInfo.aspx.vb">
+      <DependentUpon>QryDAHSMakerInfo.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="QueryDAHS\QryElecMeter.aspx.designer.vb">
+      <DependentUpon>QryElecMeter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="QueryDAHS\QryElecMeter.aspx.vb">
+      <DependentUpon>QryElecMeter.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="QueryDAHS\QryExamCalc.aspx.designer.vb">
+      <DependentUpon>QryExamCalc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="QueryDAHS\QryExamCalc.aspx.vb">
+      <DependentUpon>QryExamCalc.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="QueryDAHS\QryExamDays.aspx.designer.vb">
+      <DependentUpon>QryExamDays.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="QueryDAHS\QryExamDays.aspx.vb">
+      <DependentUpon>QryExamDays.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="QueryDAHS\QryHistoryExam.aspx.designer.vb">
+      <DependentUpon>QryHistoryExam.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="QueryDAHS\QryHistoryExam.aspx.vb">
+      <DependentUpon>QryHistoryExam.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="QueryDAHS\QryIPInfo.aspx.designer.vb">
+      <DependentUpon>QryIPInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="QueryDAHS\QryIPInfo.aspx.vb">
+      <DependentUpon>QryIPInfo.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="QueryDAHS\QryLEDLinkSch.aspx.designer.vb">
+      <DependentUpon>QryLEDLinkSch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="QueryDAHS\QryLEDLinkSch.aspx.vb">
+      <DependentUpon>QryLEDLinkSch.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="QueryDAHS\QryVideoINfo.aspx.designer.vb">
+      <DependentUpon>QryVideoINfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="QueryDAHS\QryVideoINfo.aspx.vb">
+      <DependentUpon>QryVideoINfo.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="QueryDAHS\Qry_ExamResult.aspx.designer.vb">
+      <DependentUpon>Qry_ExamResult.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="QueryDAHS\Qry_ExamResult.aspx.vb">
+      <DependentUpon>Qry_ExamResult.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="QueryDAHS\Qry_MailLogHistory.aspx.designer.vb">
+      <DependentUpon>Qry_MailLogHistory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="QueryDAHS\Qry_MailLogHistory.aspx.vb">
+      <DependentUpon>Qry_MailLogHistory.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="SetAudit.aspx.designer.vb">
+      <DependentUpon>SetAudit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SetAudit.aspx.vb">
+      <DependentUpon>SetAudit.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="SetDoc.aspx.designer.vb">
+      <DependentUpon>SetDoc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SetDoc.aspx.vb">
+      <DependentUpon>SetDoc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VryDoc.aspx.designer.vb">
+      <DependentUpon>VryDoc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VryDoc.aspx.vb">
+      <DependentUpon>VryDoc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Footer.ascx.designer.vb">
+      <DependentUpon>Footer.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Header.ascx.designer.vb">
+      <DependentUpon>Header.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.designer.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DocManage\SetReport.aspx.designer.vb">
+      <DependentUpon>SetReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DocManage\SetReport.aspx.vb">
+      <DependentUpon>SetReport.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Download\download.aspx.designer.vb">
+      <DependentUpon>download.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EPADAHS\EPADAHS.aspx.designer.vb">
+      <DependentUpon>EPADAHS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.vb">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="index.aspx.designer.vb">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="index.aspx.vb">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LawSCRIPT\LawScript.aspx.designer.vb">
+      <DependentUpon>LawScript.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.master.designer.vb">
+      <DependentUpon>Login.master</DependentUpon>
+    </Compile>
+    <Compile Include="Login\ChangePWD.aspx.designer.vb">
+      <DependentUpon>ChangePWD.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login\Login.aspx.designer.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage.master.designer.vb">
+      <DependentUpon>MasterPage.master</DependentUpon>
+    </Compile>
+    <Compile Include="QA\QA.aspx.designer.vb">
+      <DependentUpon>QA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="QA\QA.aspx.vb">
+      <DependentUpon>QA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Old_App_Code\AlertMessage.vb" />
+    <Compile Include="Old_App_Code\DB.vb" />
+    <Compile Include="Old_App_Code\MathLib.vb" />
+    <Compile Include="Controls\Footer.ascx.vb">
+      <DependentUpon>Footer.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Header.ascx.vb">
+      <DependentUpon>Header.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Download\download.aspx.vb">
+      <DependentUpon>download.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EPADAHS\EPADAHS.aspx.vb">
+      <DependentUpon>EPADAHS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LawSCRIPT\LawScript.aspx.vb">
+      <DependentUpon>LawScript.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.master.vb">
+      <DependentUpon>Login.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login\ChangePWD.aspx.vb">
+      <DependentUpon>ChangePWD.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login\Login.aspx.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage.master.vb">
+      <DependentUpon>MasterPage.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\MyExtensions\MyWebExtension.vb">
+      <VBMyExtensionTemplateID>Microsoft.VisualBasic.Web.MyExtension</VBMyExtensionTemplateID>
+      <VBMyExtensionTemplateVersion>1.0.0.0</VBMyExtensionTemplateVersion>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Login.master" />
+    <Content Include="MasterPage.master" />
+    <None Include="App_Data\PublishProfiles\CWMS_EQU.pubxml" />
+    <Content Include="bin\CWMS_DOC_2015.dll.config" />
+    <Content Include="Download\CEMS 示範建置專用簡報990114.pdf" />
+    <Content Include="Download\epbmain2010epb.rar" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <Content Include="packages.config" />
+    <Content Include="Scripts\jquery-2.1.4.min.map" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <Content Include="Web.sitemap" />
+    <Content Include="website.publishproj" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>32507</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:32507/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>此專案參照此電腦中遺漏的 NuGet 封裝。請使用「NuGet 封裝還原」進行下載。如需詳細資訊，請參閱 http://go.microsoft.com/fwlink/?LinkID=322105。遺漏的檔案為 {0}。</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

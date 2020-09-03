@@ -1,0 +1,59 @@
+﻿<%@ Master Language="VB" Inherits="CWMS_DOC_2015.MasterPage" Codebehind="MasterPage.master.vb" %>
+
+<%@ Register src="~/Controls/Header.ascx" tagname="Header" tagprefix="uc1" %>
+<%@ Register src="~/Controls/Footer.ascx" tagname="Footer" tagprefix="uc2" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>行政院環境保護署 廢(污)水自動監測連線傳輸措施說明書及確認報告書登錄系統 (Beta)</title>
+    <link href="CSS/dropdown.css" rel="stylesheet" type="text/css" />
+    <link href="CSS/EPACEMS.css" rel="stylesheet" type="text/css" />
+    
+
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <center>
+        <script type="text/javascript"> 
+        var sessionTimeout = <%= Session.Timeout %> 
+         
+        function DisplaySessionTimeout() 
+        { 
+            document.getElementById("<%= lblSessionTime.ClientID %>").innerText = sessionTimeout; 
+            sessionTimeout = sessionTimeout - 1; 
+             
+            if (sessionTimeout >= 0) 
+                window.setTimeout("DisplaySessionTimeout()", 60000); 
+            else 
+            { 
+                alert("等待時間過久，請重新登入網頁"); 
+            } 
+        } 
+    </script> 
+    <asp:ScriptManager ID="ScriptManager1" runat="server" />
+        <div> 
+            網頁剩餘session timeout 時間：還有<asp:Label ID="lblSessionTime" runat="server" Text=""></asp:Label>分鐘 
+        </div> 
+    <table class="in" width="1680px" border="0" cellpadding="0" cellspacing="0">
+        <tr><td>
+            <uc1:Header ID="Header1" runat="server" />
+        </td></tr>
+        <tr><td style="width:1680px" align="left">
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+        </td></tr>
+        <tr style="height:10px"><td></td></tr>
+        <tr><td>
+            <uc2:Footer ID="Footer1" runat="server" />
+        </td></tr>
+        <tr style="height:30px"><td></td></tr>
+    </table>
+    </center>
+    </form>
+</body>
+</html>

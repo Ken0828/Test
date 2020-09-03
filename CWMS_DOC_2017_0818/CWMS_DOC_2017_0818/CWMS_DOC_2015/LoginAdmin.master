@@ -1,0 +1,41 @@
+<%@ Master Language="VB" MasterPageFile="~/MasterPage.master" AutoEventWireup="false" Inherits="CWMS_DOC_2015.Login" Codebehind="LoginAdmin.master.vb" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+    <style type="text/css">
+        .style1
+        {
+            width: 1024px;
+        }
+        .style2
+        {
+            width: 50px;
+        }
+    </style>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+    <table class="style1" width="1024">
+        <tr>
+            <td class="style2" valign="top">
+                &nbsp;</td>
+            <td>
+                &nbsp;管理使用者帳號<br />
+                <br />
+                <asp:Button ID="Button1" runat="server" PostBackUrl="~/Login/RegUserN.aspx" Text="新增使用者帳號" />
+                <asp:Button ID="Button2" runat="server" PostBackUrl="~/Login/DeleteUser.aspx" Text="刪除使用者帳號" />
+                <asp:Button ID="Button3" runat="server" PostBackUrl="~/Login/UnlockUser.aspx" Text="解除帳號鎖定" />                
+                <asp:Button ID="Button5" runat="server" PostBackUrl="~/Login/UsersOnline.aspx" Text="查看線上使用者" />
+                <br />
+                <br />
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                    <p>
+                        &nbsp;</p>
+                </asp:ContentPlaceHolder>
+                <br />
+                <br />
+                <br />
+                <br />
+            </td>
+        </tr>
+    </table>
+</asp:Content>
+
