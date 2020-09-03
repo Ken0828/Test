@@ -21,6 +21,10 @@ namespace NetCoreMVC
         }
         public void P2()
         {
+            //TODO ¤Wª©­n²¾°£2
+        }
+        public void P3()
+        {
 
         }
         public static IHostBuilder CreateHostBuilder(string[] args) =>
