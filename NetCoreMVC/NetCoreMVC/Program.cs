@@ -15,6 +15,10 @@ namespace NetCoreMVC
         {
             CreateHostBuilder(args).Build().Run();
         }
+        public void P1()
+        {
+
+        }
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
             Host.CreateDefaultBuilder(args)
